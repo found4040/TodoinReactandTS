@@ -1,0 +1,23 @@
+.App .single_card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between !important;
+    width: 25rem;
+    align-items: center;
+    padding: 12px 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    margin-top: 10px;
+    background-color:#a5f8ae;
+}
+
+.App .single_card .card_right{
+    cursor: pointer;
+}
+.App .single_card .single_input{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 3px;
+}
+
