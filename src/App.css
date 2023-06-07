@@ -17,3 +17,15 @@
   flex-direction: row !important;
   
 }
+.App .theme {
+  padding: 1rem;
+} 
+.App .theme h3{
+  text-decoration: underline 2px solid gray;
+}
+
+.App .theme .theme_icon {
+  font-size: 25px;
+  cursor: pointer;
+  
+}
