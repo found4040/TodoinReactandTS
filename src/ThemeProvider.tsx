@@ -10,10 +10,7 @@ export const ThemeContextR = createContext<ThemeContext>(
 );
 
 
-interface Props extends React.PropsWithChildren {
-    
-
-}
+type Props = React.PropsWithChildren
 
 export const ThemeProvider: React.FC<Props> = ({ children }:Props) => {
   const [theme, setTheme] = useState<Theme>("light");
