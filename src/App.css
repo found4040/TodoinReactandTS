@@ -1,33 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-*{
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+:root {
+    --primary-color: red;
+    --secondary-color: green;
 }
 
 .App {
     padding: .5rem;
     text-align: center;
-    
+
+
+}
+
+.second {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 7px;
+    background-color:#fff;
+    height: auto;
     
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.second h3 {
+   
+    text-decoration: underline 2px solid black;
+}
