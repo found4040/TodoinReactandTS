@@ -14,7 +14,7 @@ const Account = () => {
 
     const [loanAmount, setloanAmount] = useState("")
     const [loanPurpose, setloanPurpose] = useState("")
-    const [currency, setCurrency] = useState("USD")
+    const [currency, setCurrency] = useState("INR")
     const send = useDispatch();
 
 
@@ -34,9 +34,10 @@ const Account = () => {
         }
 
         send(deposit(Deposit, currency))
-        console.log((Deposit, currency))
+        // console.log((Deposit, currency))
+
         setDeposit("")
-        setCurrency("")
+        setCurrency("INR")
 
 
     }
@@ -91,9 +92,9 @@ const Account = () => {
 
                 <input value={Deposit} onChange={(e) => setDeposit(+e.target.value)} className="form-control" placeholder='Deposit' />
                 <select value={currency} className="form-select mt-3" onChange={(e) => setCurrency(e.target.value)} >
-                    <option value="USD">Doller</option>
+                    <option value="INR">INR</option>
+                    <option value="USD">USD</option>
                     <option value="EUR">Euro</option>
-                    <option value="GBP">British Pond</option>
 
 
                 </select>
@@ -119,7 +120,7 @@ const Account = () => {
             {
                 currentLoan > 0 && (
                     <div className="col-md-8 border rounded border-info p-3">
-                        <h5>Pay loan {currentLoan} | {currentLoanPurpose}</h5>
+                        <h5>Pay loan {currentLoan} for "{currentLoanPurpose}"</h5>
                         <button onClick={payBackHandle} className="btn btn-primary ms-3">Pay loan</button>
 
                     </div>

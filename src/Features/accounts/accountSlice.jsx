@@ -38,7 +38,7 @@ export default function AccountReducer(state = initialStateAccount, action) {
 
 
 export function deposit(amount,currency) {
-  if (currency === "USD") return { type: "Account/deposit", payload: amount }
+  if (currency === "INR") return { type: "Account/deposit", payload: amount }
 
   
 
@@ -47,11 +47,11 @@ export function deposit(amount,currency) {
 
 
 
-    const res = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${currency}&to=USD`);
+    const res = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${currency}&to=INR`);
 
     const data = await res.json()
     console.log(data)
-    const converted =  data.rates.USD
+    const converted =  data.rates.INR
 
     send({ type: "Account/deposit", payload:converted})   
     
