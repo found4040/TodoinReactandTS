@@ -24,8 +24,7 @@ const Account = () => {
         // balance,
     } = useSelector((store) => store.account)
 
-    // console.log(balance)
-
+  
 
     function depositHandle() {
 
@@ -33,9 +32,9 @@ const Account = () => {
             alert("Please enter deposit Amount")
         }
 
+     
         send(deposit(Deposit, currency))
-        // console.log((Deposit, currency))
-
+        console.log(setDeposit,"check")
         setDeposit("")
         setCurrency("INR")
 
@@ -51,6 +50,8 @@ const Account = () => {
         if (!Withdraw) {
             alert("Please enter a withdraw Amount")
         }
+
+        
         send(withdraw((Withdraw)))
         setWithdraw("")
 
