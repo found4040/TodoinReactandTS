@@ -1,7 +1,7 @@
-import React from 'react'
 import './App.css';
 // import Todo from './Todo';
 import Second from './ToDoComponents/Second';
+import Third from './Third/Third';
 
 
 const App = () => {
@@ -10,6 +10,9 @@ const App = () => {
       {/* <Todo/> */}
       <hr />
       <Second/>
+      <Third/>
+     
+
     </div>
 
 

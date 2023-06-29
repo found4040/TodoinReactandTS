@@ -21,7 +21,7 @@ const Account = () => {
     const {
         loan: currentLoan,
         loanPurpose: currentLoanPurpose,
-        // balance,
+        
     } = useSelector((store) => store.account)
 
   

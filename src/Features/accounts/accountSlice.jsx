@@ -53,7 +53,7 @@ export function deposit(amount, currency) {
   if (currency === "INR") return { type: "account/deposit", payload: amount }
   console.log(amount, currency, "h")
 
-  return async function (send, getState) {
+  return async function (send) {
     // send({ type: "account/deposit", payload: deposit })
 
     const res = await fetch(`https://api.frankfurter.app/latest?amount=${amount}&from=${currency}&to=INR`)

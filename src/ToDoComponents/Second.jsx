@@ -1,4 +1,3 @@
-import React from 'react'
 import CreateCustomer from '../Features/customer/createCustomer';
 import Account from '../Features/accounts/account';
 import CustomerName from '../Features/customer/customerName';
